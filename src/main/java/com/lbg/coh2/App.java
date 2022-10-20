@@ -1,5 +1,7 @@
 package com.lbg.coh2;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 /**
  * Hello world!
@@ -11,24 +13,26 @@ public class App
     public static void main( String[] args )
     {
 		Scanner console = new Scanner(System.in);
-		prices = new double[3];
+		//prices = new double[3];
+
+		ArrayList<Double> prices = new ArrayList<Double>();
 
 		System.out.println( "Enter the cost of 5 Items: " );
 		for(int i =0; i<5;i++){
 			double input = console.nextDouble();
 			try{
-				prices[i] = input;
-				System.out.println(Arrays.toString(prices));
+				prices.add(input);
+				System.out.println(prices);
 			}catch (Exception e){
-				double temp[]= prices;
-				prices = new double[temp.length*2];
-				System.arraycopy(temp,0,prices,0,temp.length);
-				prices[i] = input;
-				System.out.println(Arrays.toString(prices));
+//				double temp[]= prices;
+//				prices = new double[temp.length*2];
+//				System.arraycopy(temp,0,prices,0,temp.length);
+//				prices[i] = input;
+//				System.out.println(Arrays.toString(prices));
 			}
 		}
-		Arrays.sort(prices);
-		System.out.println(Arrays.toString(prices));
+
+
     }
     
     void bin(){
