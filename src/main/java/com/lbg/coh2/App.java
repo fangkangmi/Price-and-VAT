@@ -1,8 +1,6 @@
 package com.lbg.coh2;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+
 /**
  * Hello world!
  *
@@ -31,7 +29,8 @@ public class App
 //				System.out.println(Arrays.toString(prices));
 			}
 		}
-
+		Collections.sort(prices);
+		System.out.println(prices);
 
     }
     
