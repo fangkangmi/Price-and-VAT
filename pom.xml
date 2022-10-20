@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.lbg.coh2</groupId>
-  <artifactId>java_basis</artifactId>
+  <artifactId>java_basics</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>java_basis</name>
@@ -20,4 +20,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
 </project>
